@@ -11,3 +11,5 @@ Once inside the container, move to `/results` and execute
     /app/build/sapphirepp
 
 for a test run.
+
+## Docker Pull Command : docker pull ritanjos/sapphire-docker 
