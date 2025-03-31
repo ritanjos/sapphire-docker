@@ -1,5 +1,11 @@
 # Sapphire Docker Image
 
+<div align="justify">
+This Docker image provides a ready-to-use environment for running [Sapphire++](https://github.com/sapphirepp/sapphirepp), a high-performance relativistic hydrodynamics (RHD) code written in C++. It simplifies setup by packaging all dependencies, compilation, and execution tools into a single container.
+
+You can either build the image locally using the provided `Dockerfile`, or pull a pre-built version from Docker Hub. The container mounts your current directory into `/results`, where you can run simulations and access output files with ease.
+</div>
+
 ## Option 1: Build the Docker Image Yourself
 ```
 docker build -t sapphirepp:2.0 .
