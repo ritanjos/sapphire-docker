@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-ADD . /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -21,6 +20,10 @@ RUN apt-get update && apt-get install -y \
     curl
 
 RUN useradd -m -s /bin/bash sapphire
+WORKDIR /app
+RUN wget https://github.com/sapphirepp/sapphirepp/archive/refs/tags/v1.1.0.tar.gz && \
+    tar xfzv v1.1.0.tar.gz && \
+    mv sapphirepp-1.1.0/* ./
 WORKDIR /app/scripts
 RUN chown -R sapphire /app
 RUN chgrp -R sapphire /app
