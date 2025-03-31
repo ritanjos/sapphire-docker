@@ -12,4 +12,6 @@ Once inside the container, move to `/results` and execute
 
 for a test run.
 
-## Docker Pull Command : docker pull ritanjos/sapphire-docker 
+# Docker Pull Command 
+
+docker pull ritanjos/sapphire-docker 
