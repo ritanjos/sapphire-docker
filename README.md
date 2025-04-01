@@ -16,7 +16,7 @@ This will create a local Docker image named sapphirepp:2.0 using the Dockerfile 
 
 If you don't want to build the image manually, you can pull the ready-to-use image:
 ```
-docker pull ritanjos/sapphire-docker 
+docker pull ritanjos/sapphire-docker:2.0
 ```
 ## Running Sapphire
 
